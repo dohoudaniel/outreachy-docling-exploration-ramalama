@@ -121,7 +121,7 @@ Platform: Linux-6.14.0-37-generic-x86_64-with-glibc2.39
 - **docling-ibm-models** — the ML models (layout analysis, table structure recognition)
 - **docling-parse** — the PDF parsing backend
 
-![Installation Confirmation](/screenshots-for-docs/2-installation.png)
+![Installation Confirmation](/screenshots-for-docs/3-installation.png)
 
 ---
 
