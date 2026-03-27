@@ -69,7 +69,7 @@ source venv/bin/activate
 pip install docling
 ```
 
-[Installation Screenshot](/screenshots-for-docs/1-installation.png)
+![Installation Screenshot](/screenshots-for-docs/1-installation.png)
 
 Docling pulls in a substantial dependency tree including PyTorch, torchvision, and several IBM Research model packages. This is because Docling uses deep learning models for layout analysis and table structure recognition — it is not a lightweight text extractor.
 
@@ -121,7 +121,7 @@ Platform: Linux-6.14.0-37-generic-x86_64-with-glibc2.39
 - **docling-ibm-models** — the ML models (layout analysis, table structure recognition)
 - **docling-parse** — the PDF parsing backend
 
-[Installation Confirmation](/screenshots-for-docs/2-installation.png)
+![Installation Confirmation](/screenshots-for-docs/2-installation.png)
 
 ---
 
