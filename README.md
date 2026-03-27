@@ -707,3 +707,7 @@ What this task taught me:
 5. Table structure quality is the highest-risk dimension — errors there corrupt the most knowledge-dense content silently
 
 Each of these findings connects directly to a scenario where a RAG system would give a wrong answer if the wrong Docling setting was chosen. That is the fundamental lesson this task teaches: document processing quality determines AI answer quality, and no amount of downstream sophistication can recover from a corrupted input.
+
+---
+
+Check Out my Blog Post **[here](https://dohoudanielfavour.hashnode.dev/my-first-outreachy-task-with-docling-for-ramalama)**
