@@ -37,9 +37,9 @@ source venv/bin/activate
 
 ### Source Document
 
-**File:** `pytorch-conference.pdf`
-**Size:** 4.7 MB
-**Content:** PyTorch Conference 2026: Sponsorship Prospectus (Paris, France, 7–8 April 2026)
+- **File:** `pytorch-conference.pdf`
+- **Size:** 4.7 MB
+- **Content:** PyTorch Conference 2026: Sponsorship Prospectus (Paris, France, 7–8 April 2026)
 
 This document was chosen because it is an excellent stress-test for a document processing pipeline:
 
@@ -164,7 +164,9 @@ Markdown is the default output format because it serves RAG pipelines better tha
 3. **Human verifiability**: A developer can open a `.md` file and immediately verify conversion quality. JSON or binary formats require additional tooling to inspect.
 4. **Structured but not noisy**: HTML has hundreds of tags that are irrelevant to meaning. JSON has schema overhead. Plain text loses all structure. Markdown preserves headings, tables, lists, and emphasis with minimal syntax. An LLM trained on the internet has seen enormous amounts of Markdown and handles it natively.
 
-![Docling Help](./screenshots-for-docs/9-default-conversion.png)
+![Default Conversion](./screenshots-for-docs/9-default-conversion.png)
+
+![Default Conversion](./screenshots-for-docs/10-default-conversion.png)
 
 ---
 
