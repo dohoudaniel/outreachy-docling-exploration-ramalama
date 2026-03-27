@@ -1,4 +1,4 @@
-## Docling Exploration — Outreachy 2026 Contribution
+## Docling Exploration — My Outreachy 2026 Contribution
 - **Issue:** [Issue #122 — Docling: explore document processing basics](https://forge.fedoraproject.org/commops/interns/issues/122)
 - **Author:** Dohou Daniel Favour
 - **Date:** 2026-03-27
@@ -14,7 +14,7 @@ This task establishes a working understanding of Docling's CLI, its output forma
 
 ---
 
-## Environment
+### Environment For This Task
 
 | Component | Version |
 |---|---|
