@@ -35,7 +35,7 @@ source venv/bin/activate
 
 ---
 
-## Source Document
+### Source Document
 
 **File:** `pytorch-conference.pdf`
 **Size:** 4.7 MB
@@ -50,5 +50,100 @@ This document was chosen because it is an excellent stress-test for a document p
 - **Real-world document** — not a synthetic test; produced by a professional typesetter
 
 A sponsorship brochure is more challenging than a plain text document and more representative of the kinds of documents a RAG system would need to process in production.
+
+---
+
+### Documentation Of All Steps I Carried Out To Complete This Task
+
+#### Step 1: Installation of Docling
+
+Docling was installed inside a Python virtual environment to keep dependencies isolated.
+
+
+```bash
+# Create and activate the virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install docling
+pip install docling
+```
+
+[Installation Screenshot](/screenshots-for-docs/1-installation.png)
+
+Docling pulls in a substantial dependency tree including PyTorch, torchvision, and several IBM Research model packages. This is because Docling uses deep learning models for layout analysis and table structure recognition — it is not a lightweight text extractor.
+
+To verify the installation:
+
+```bash
+pip show docling
+```
+
+Output:
+
+```
+Name: docling
+Version: 2.82.0
+Summary: SDK and CLI for parsing PDF, DOCX, HTML, and more, to a unified
+         document representation for powering downstream workflows such as
+         gen AI applications.
+Author: 
+        Author-email: Christoph Auer <cau@zurich.ibm.com>, Michele Dolfi <dol@zurich.ibm.com>, Maxim Lysak <mly@zurich.ibm.com>, Nikos Livathinos <nli@zurich.ibm.com>, Ahmed Nassar <ahn@zurich.ibm.com>, Panos Vagenas <pva@zurich.ibm.com>, Peter Staar <taa@zurich.ibm.com>
+License: 
+        Location: ./venv/lib/python3.12/site-packages
+Requires: accelerate, beautifulsoup4, certifi, defusedxml, docling-core, docling-ibm-models, docling-parse, filetype, huggingface_hub, lxml, marko, openpyxl, pandas, pillow, pluggy, polyfactory, pydantic, pydantic-settings, pylatexenc, pypdfium2, python-docx, python-pptx, rapidocr, requests, rtree, scipy, torch, torchvision, tqdm, typer
+```
+
+---
+
+## Step 2 — Display the Version
+
+```bash
+docling --version
+```
+
+Output:
+
+```
+Docling version: 2.82.0
+Docling Core version: 2.70.2
+Docling IBM Models version: 3.12.0
+Docling Parse version: 5.6.1
+Python: cpython-312 (3.12.3)
+Platform: Linux-6.14.0-37-generic-x86_64-with-glibc2.39
+```
+
+
+`--version` reports not just the top-level `docling` package but all sub-packages in the Docling ecosystem:
+
+- **docling** — the CLI and SDK entry point
+- **docling-core** — the unified document model (`DoclingDocument`) and shared data structures
+- **docling-ibm-models** — the ML models (layout analysis, table structure recognition)
+- **docling-parse** — the PDF parsing backend
+
+[Installation Confirmation](/screenshots-for-docs/2-installation.png)
+
+---
+
+## About the Warnings
+
+Every run produced these warnings:
+
+```
+[W327 13:54:08.913322637 NNPACK.cpp:56] Could not initialize NNPACK!
+Reason: Unsupported hardware.
+```
+
+And occasionally:
+
+```
+WARNING docling.models.stages.ocr.rapid_ocr_model: RapidOCR returned empty result!
+```
+
+**These are not errors.** They do not affect output quality.
+
+- **NNPACK warning** — NNPACK is an optional CPU acceleration library for PyTorch. This machine's CPU does not support the required instruction sets. PyTorch falls back to standard CPU operations automatically. This warning appears on every run and can safely be ignored.
+
+- **RapidOCR empty result** — Docling's OCR engine (RapidOCR) tried to extract text from a region — likely a decorative image or logo — and found no readable text. This is expected behaviour for graphical elements that contain no text. The rest of the document is unaffected.
 
 ---
