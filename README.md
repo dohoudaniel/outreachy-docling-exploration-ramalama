@@ -32,7 +32,6 @@ All commands were run inside a Python virtual environment (`venv`). The environm
 ```bash
 source venv/bin/activate
 ```
-<br>
 
 ---
 
