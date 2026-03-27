@@ -174,9 +174,9 @@ Or equivalently with `--output`:
 docling pytorch-conference.pdf --output ./output/default/
 ```
 
-**Output:** `output/default/pytorch-conference.md`
-**File size:** 1.2 MB
-**Line count:** 281
+- **Output:** `output/default/pytorch-conference.md`
+- **File size:** 1.2 MB
+- **Line count:** 281
 
 #### Why Markdown is the Default for Docling Conversion
 
@@ -203,8 +203,8 @@ docling pytorch-conference.pdf --to html --output ./output/html/
 
 ![HTML Conversion](./screenshots-for-docs/12-html-conversion.png)
 
-**Output:** `output/html/pytorch-conference.html`
-**File size:** 1.2 MB
+- **Output:** `output/html/pytorch-conference.html`
+- **File size:** 1.2 MB
 
 #### What Changes
 
@@ -235,10 +235,10 @@ docling pytorch-conference.pdf --to html --image-export-mode referenced \
   --output ./output/html-referenced-image-export-mode/
 ```
 
-**Output:** `output/html-referenced-image-export-mode/pytorch-conference.html` + 25 PNG files
-**HTML file size:** 22 KB
-**PNG artifacts total:** ~900 KB
-**Combined total:** ~922 KB
+- **Output:** `output/html-referenced-image-export-mode/pytorch-conference.html` + 25 PNG files
+- **HTML file size:** 22 KB
+- **PNG artifacts total:** ~900 KB
+- **Combined total:** ~922 KB
 
 ![HTML Conversion (Image Compressed)](./screenshots-for-docs/22-image-export-mode.png)
 
@@ -279,8 +279,8 @@ For Ramalama running on a personal laptop, processing a 22 KB HTML file is drama
 docling pytorch-conference.pdf --to json --output ./output/json/
 ```
 
-**Output:** `output/json/pytorch-conference.json`
-**File size:** 6.5 MB
+- **Output:** `output/json/pytorch-conference.json`
+- **File size:** 6.5 MB
 
 ![JSON Conversion](./screenshots-for-docs/15-json-conversion.png)
 
@@ -351,8 +351,8 @@ JSON is the format for **programmatic RAG pipelines**. Frameworks like LangChain
 docling pytorch-conference.pdf --to text --output ./output/text/
 ```
 
-**Output:** `output/text/pytorch-conference.txt`
-**File size:** 26 KB
+- **Output:** `output/text/pytorch-conference.txt`
+- **File size:** 26 KB
 
 ![Text Conversion](./screenshots-for-docs/17-text-conversion.png)
 
@@ -391,8 +391,8 @@ Text output is appropriate only for **simple prose documents** with no tables or
 docling pytorch-conference.pdf --to yaml --output ./output/yaml/
 ```
 
-**Output:** `output/yaml/pytorch-conference.yaml`
-**File size:** 6.4 MB
+- **Output:** `output/yaml/pytorch-conference.yaml`
+- **File size:** 6.4 MB
 
 ![YAML Conversion](./screenshots-for-docs/18-yaml-conversion.png)
 
