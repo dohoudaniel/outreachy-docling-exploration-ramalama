@@ -549,7 +549,7 @@ By default, Docling's OCR engine (RapidOCR) runs selectively — only on regions
 2. Runs RapidOCR on that bitmap
 3. Replaces the native text with whatever OCR returns
 
-### Why This Was the Wrong Tool for My Document
+### Why OCR Was the Wrong Tool for My Document
 
 `pytorch-conference.pdf` was produced by a professional layout tool — not scanned from paper. It already has a perfect text layer: every character correct, every Unicode symbol intact, every piece of punctuation as intended.
 
